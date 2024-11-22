@@ -1,0 +1,25 @@
+.box1,
+.box2 {
+    background-color: darkcyan;
+    color: aliceblue;
+    width: 500px;
+    height: 130px;
+    padding-top: 1px; 
+    
+}
+
+.high {
+   color:orange;
+}
+
+
+.high2 {
+    color: orange;
+    font-weight: bold;
+    
+    font-size: 30px;
+}
+.image {
+    height: 350px;
+    width: auto; 
+}
