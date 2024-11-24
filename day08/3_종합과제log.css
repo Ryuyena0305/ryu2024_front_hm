@@ -1,302 +1,594 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 
-*{  
-    /* border: 1px solid red; */
-    padding : 0px; margin : 0px;
-    box-sizing: border-box;
+* {
+  /* border: 1px solid red; */
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-a{ color: black; text-decoration: none;}
-li{ list-style-type: none;}
 
-body{ font-family: "Noto Sans KR";}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Noto Sans KR";
+}
 
 /* ================헤더================== */
 
-#header{ width: 1460px; margin: 0 auto; }
- 
+#header {
+  width: 1460px;
+  margin: 0 auto;
+}
+
 /* ==============헤더(상단)=============== */
 
-#headerTop{ 
+#headerTop {
   font-size: 14px;
   width: 100%;
-  display: flex; justify-content: flex-end; 
-  padding: 0px 20px; margin: 10px 0px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 20px;
+  margin: 10px 0px;
 }
-#headerTop ul{ display: flex;}
-#headerTop li{ 
-  display: flex; justify-content: space-between; 
+
+#headerTop ul {
+  display: flex;
+}
+
+#headerTop li {
+  display: flex;
+  justify-content: space-between;
   padding-left: 22px;
 }
-#headerTop a{ 
-  display: flex; align-items: center;
+
+#headerTop a {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   border: 1px solid white;
 }
-#headerTop a:hover{ border: 1px solid #0c5aeb;}
-#headerTop img{ 
-  width: 25px; height: 25px; 
-  display: block; margin: 0 auto; margin-right: 4px;
-} 
+
+#headerTop a:hover {
+  border: 1px solid #0c5aeb;
+}
+
+#headerTop img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+  margin-right: 4px;
+}
 
 /* ==============헤더(하단)================ */
 
-#headerBottom{ 
-  display: flex; justify-content: space-between;
+#headerBottom {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-top: 10px;
 }
 
 /* ============헤더(하단-왼쪽)============== */
 
-#headerLeft{ 
-  display: flex; justify-content: space-between; align-items: center; 
+#headerLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 770px;
 }
-#headerLogo { margin-right : 75px; margin-bottom : 14px;}
-#headerLogo img{ height: 55px; margin-right: -5px;}
 
-#headerMenu > ul{ 
-  display: flex; justify-content: space-evenly;
+#headerLogo {
+  margin-right: 75px;
+  margin-bottom: 14px;
+}
+
+#headerLogo img {
+  height: 55px;
+  margin-right: -5px;
+}
+
+#headerMenu>ul {
+  display: flex;
+  justify-content: space-evenly;
   width: 450px;
 }
-#headerMenu > ul > li{ 
+
+#headerMenu>ul>li {
   border-bottom: 3px solid white;
   display: flex;
 }
-#headerMenu > ul > li:hover{ border-bottom: 3px solid #00256C;}
-#headerMenu p{ 
-  font-size: 21px; height: 50px;
-  display: flex; align-items: center; justify-content: center;
+
+#headerMenu>ul>li:hover {
+  border-bottom: 3px solid #00256C;
+}
+
+#headerMenu p {
+  font-size: 21px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0px 10px 20px 10px;
 }
-#headerMenu p:hover{ font-weight: bold;}
+
+#headerMenu p:hover {
+  font-weight: bold;
+}
 
 /* ===============드롭다운=============== */
-#headerBox { 
+#headerBox {
   display: none;
   position: absolute;
-  top : 123px; left: 0px;
+  top: 123px;
+  left: 0px;
   background-color: white;
   width: 100%;
   border: 1px solid gainsboro;
   box-shadow: 3px 3px 3px #e2e2e2;
 }
-#headerBox > div{
+
+#headerBox>div {
   width: 1460px;
   margin: 0 auto;
-  display: flex; justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-#headerMenu li:hover #headerBox{
+
+#headerMenu li:hover #headerBox {
   display: block;
 }
 
-#headerLeftbox{
-  display: flex; align-content: flex-start;
+#headerLeftbox {
+  display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
-  padding: 20px 0px; margin: 25px 0px;
+  padding: 20px 0px;
+  margin: 25px 0px;
   width: 100%
 }
-#headerLeftbox ul{
-  display: inline-block; 
+
+#headerLeftbox ul {
+  display: inline-block;
   text-align: left;
   width: 280px;
 }
-#headerLeftbox li{
+
+#headerLeftbox li {
   margin-bottom: 20px;
 }
-#headerLeftbox a{ 
+
+#headerLeftbox a {
   display: flex;
   color: rgb(92, 92, 92);
-}#headerLeftbox h4{ 
+}
+
+#headerLeftbox h4 {
   display: flex;
   color: black;
 }
 
-#headerLeftbox span{ 
+#headerLeftbox span {
   vertical-align: middle;
   margin-left: 5px;
 }
-#headerLeftbox img{ 
-  width: 25px; height: 15px;
-}
-#headerLeftbox li:hover h4{ text-decoration: underline;}
-#headerLeftbox li:hover a{ text-decoration: underline;}
 
-#headerRightbox{
+#headerLeftbox img {
+  width: 25px;
+  height: 15px;
+}
+
+#headerLeftbox li:hover h4 {
+  text-decoration: underline;
+}
+
+#headerLeftbox li:hover a {
+  text-decoration: underline;
+}
+
+#headerRightbox {
   margin: 25px 0px;
   padding: 20px 0px;
   width: 400px;
-  display: flex; justify-content: flex-end; align-content:flex-start;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
   flex-wrap: wrap;
 }
-#headerRightbox a{ 
+
+#headerRightbox a {
   display: block;
-  width: 257px; height: 118px;
-  position : relative;
+  width: 257px;
+  height: 118px;
+  position: relative;
   border-radius: 5px;
   margin-bottom: 20px;
   margin-right: 20px;
-  padding : 3px 0px 0px 2px;
+  padding: 3px 0px 0px 2px;
   border: 1px solid white;
 }
 
-#headerRightbox > a > img{
-  width: 250px; height: 110px;
+#headerRightbox>a>img {
+  width: 250px;
+  height: 110px;
   display: block;
   border: 1px solid white;
   border-radius: 5px;
 }
-#textimg{ 
+
+#textimg {
   vertical-align: middle;
   width: 160px;
   position: absolute;
-  top: 25px; left: 20px;
+  top: 25px;
+  left: 20px;
 }
-#textimg img{ 
-  width: 25px; height: 15px; 
+
+#textimg img {
+  width: 25px;
+  height: 15px;
   display: inline-block;
 }
-#textimg h4{ display: inline-block; flex-wrap: wrap;}
-#textimg span{ vertical-align: middle;}
 
-#headerRightbox a:hover { border: 1px solid #0040b6;}
+#textimg h4 {
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+#textimg span {
+  vertical-align: middle;
+}
+
+#headerRightbox a:hover {
+  border: 1px solid #0040b6;
+}
 
 /* ============헤더(하단-오른쪽)============= */
 
-#headerRight{ 
+#headerRight {
   width: 370px;
-  display: flex; justify-content: space-around; align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 0px 10px 10px 10px;
 }
 
-#headerRight div{ margin: 8px 0px;}
-#headerSerach{
-  width: 215px;  height: 40px;
+#headerRight div {
+  margin: 8px 0px;
+}
+
+#headerSerach {
+  width: 215px;
+  height: 40px;
   border: 1px solid #00256C;
   border-radius: 8px;
-  display: flex; align-items: center; padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
 }
-#headerSerach input{ 
-  width: 160px; height: 35px;
-  letter-spacing: -1px;
-  border: none;  
-  display: flex; align-items: center;
-}
-#headerSerach:hover { border: 2px solid #00256C;}
-#headerSerach img{ display: block; width: 25px; height: 25px; }
 
-#headerLogin{ 
-  width: 122px; height: 46px;
-  border-radius: 50px;
-  display: flex; justify-content: center; align-items: center;
+#headerSerach input {
+  width: 160px;
+  height: 35px;
+  letter-spacing: -1px;
+  border: none;
+  display: flex;
+  align-items: center;
 }
-#headerLogin:hover { border: 1px solid #00256C;}
-#headerLogin span{
-  width: 116px;  height: 40px;
-  color:white;
-  font-weight: bold; font-size: 15px;
-  background-color: #00256C ;
+
+#headerSerach:hover {
+  border: 2px solid #00256C;
+}
+
+#headerSerach img {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+#headerLogin {
+  width: 122px;
+  height: 46px;
   border-radius: 50px;
-  display: flex; justify-content: center; align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerLogin:hover {
+  border: 1px solid #00256C;
+}
+
+#headerLogin span {
+  width: 116px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #00256C;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ==================푸터=================== */
-#footer{ width: 1460px; margin: 0 auto;}
+#footer {
+  width: 1460px;
+  margin: 0 auto;
+}
 
 /* ================푸터(상단)================ */
-#footerTop{
+#footerTop {
   width: 100%;
-  margin-top: 30px; padding: 30px 0px;
-  border-bottom: 1px solid rgb(219, 219, 219) ;
+  margin-top: 30px;
+  padding: 30px 0px;
+  border-bottom: 1px solid rgb(219, 219, 219);
 }
-#footerTop { display: flex; justify-content: space-between;}
 
-#footerTop ul{ text-align: left; width: 25%;}
-#footerTop li{ margin-bottom: 20px;}
-#footerTop a{color : rgb(92, 92, 92);}
-#footerTop li:hover a{ text-decoration: underline;}
+#footerTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerTop ul {
+  text-align: left;
+  width: 25%;
+}
+
+#footerTop li {
+  margin-bottom: 20px;
+}
+
+#footerTop a {
+  color: rgb(92, 92, 92);
+}
+
+#footerTop li:hover a {
+  text-decoration: underline;
+}
 
 /* ================푸터(하단)================ */
-#footerbottom{ width: 100%;}
+#footerbottom {
+  width: 100%;
+}
 
 /* =============푸터(하단-위)================ */
-#ftbottomUp{
+#ftbottomUp {
   width: 100%;
   margin: 25px 0px;
-  display: flex; justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-#footerLeft{ display: flex; justify-content: center; align-items: center;}
-#ftLeftimg{ margin-right: 30px;}
-#ftRightimg img{ margin-right: 10px;}
 
-#ftLeftimg img{ 
-  display: inline; height: 45px;
-  padding: 5px; 
+#footerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ftLeftimg {
+  margin-right: 30px;
+}
+
+#ftRightimg img {
+  margin-right: 10px;
+}
+
+#ftLeftimg img {
+  display: inline;
+  height: 45px;
+  padding: 5px;
   border: 1px solid white;
   border-radius: 5px;
 }
-#ftRightimg img{ 
-  display: inline; height: 40px;
-  padding: 2px; 
+
+#ftRightimg img {
+  display: inline;
+  height: 40px;
+  padding: 2px;
   border: 1px solid white;
   border-radius: 5px;
 }
-#ftLeftimg img:active{ border: 1px solid #0c5aeb; border-radius: 5px;}
-#ftRightimg img:hover{ border: 1px solid #0c5aeb; border-radius: 100%;}
 
-#footerRight img{ height: 45px; padding-top: 10px;}
+#ftLeftimg img:active {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+}
+
+#ftRightimg img:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 100%;
+}
+
+#footerRight img {
+  height: 45px;
+  padding-top: 10px;
+}
 
 /* =============푸터(하단-아래)=============== */
-#ftbottomDown{
+#ftbottomDown {
   width: 100%;
-  margin-top: 35px; margin-bottom: 8px;
-  display: flex; justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
 }
-#ftbottomDownmain{ width: 55%;} 
 
-#ftBottomcontent{ 
+#ftbottomDownmain {
+  width: 55%;
+}
+
+#ftBottomcontent {
   font-size: 14px;
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   vertical-align: center;
 }
-#ftBottomcontent div{ 
+
+#ftBottomcontent div {
   padding-right: 5px;
 }
-#ftBottomcontent h4{ display: inline;}
-#ftBottomcontent span{ 
-  font-size:12px; color: #dbdbdb;
+
+#ftBottomcontent h4 {
+  display: inline;
+}
+
+#ftBottomcontent span {
+  font-size: 12px;
+  color: #dbdbdb;
   padding-right: 5px;
 }
-#footerYear{ 
-  font-size: 10px; color: #555555;
+
+#footerYear {
+  font-size: 10px;
+  color: #555555;
   margin: 12px 0px;
 }
 
-#ftBottomimg{ 
-  width: 16%; 
+#ftBottomimg {
+  width: 16%;
   margin-right: 5px;
-  display: flex; justify-content: center; align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
-#ftBottomimg a{ display: block;}
-#ftBottomimg img{ 
+
+#ftBottomimg a {
+  display: block;
+}
+
+#ftBottomimg img {
   margin: 5px;
-  border: 1px solid white; border-radius: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
-#ftBottomimg img:hover{ border: 1px solid #0c5aeb; border-radius: 5px;}
+
+#ftBottomimg img:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+}
 
 /* ==================팝업================== */
-#popup{ 
+#popup {
   position: fixed;
-  bottom: 18px; right: 40px;
+  bottom: 18px;
+  right: 40px;
 }
-#popup a{ display: inline;}
-#popup img{
-  width: 65px; height: 65px;
+
+#popup a {
+  display: inline;
+}
+
+#popup img {
+  width: 65px;
+  height: 65px;
   padding: 14px;
   margin-top: 10px;
-  display: block; 
+  display: block;
   border: 1px solid #dadce2;
   border-radius: 100%;
 }
-#popupClose img{ padding: 20px;}
+
+#popupClose img {
+  padding: 20px;
+}
+
 /*========================================로그인 페이지=========================================================*/
+/*배경*/
+.backgroundcolorset {
+  background-color: #f8f9fc;
+  height: 1023px;
+}
+
+.logmainbox {
+  background-color: white;
+  width: 1280px;
+  height: 790px;
+  margin: 0px auto;
+}
+
+.backgroundcolorpoint:before {
+
+  font-size: 28px;
+  font-family: "Noto Sans KR";
+}
+
+.logmainbox{
+  display: flex;
+}
+
+/*로그인상자 왼쪽*/
+.loginmaintitle {
+  width: 427px;
+  height: 180px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #192668;
+  margin-bottom: 5px;
+  gap: 1px;
+
+}
+
+.loginmaindetail {
+  color: #192668;
+  font-size: 22px;
+}
+
+.joinbtn:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+
+}
+
+.joinbtn {
+  border: 1px solid #192668;
+  border-radius: 5px;
+  width: 230px;
+  height: 60px;
+  font-size: 18px;
+  color: #192668;
+  background-color: white;
+  margin-bottom: 90px;
+  margin-top: 50px;
+
+}
+
+.logmainbox_leftbottom:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+  width: 195px;
+
+}
+
+.logmainbox_leftbottom {
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.logmain_left {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*바*/
+.logmin_bar {
+  background-color:  #dadbe0;
+  width: 1px;
+
+  margin: 50px 0px;
+}
+
+
+/*로그인상자 왼쪽*/
+.logmain_right{
+  margin: 0px auto;
+}
