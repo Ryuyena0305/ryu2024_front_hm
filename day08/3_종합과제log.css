@@ -511,8 +511,9 @@ body {
 .logmainbox {
   background-color: white;
   width: 1280px;
-  height: 790px;
+  height: 730px;
   margin: 0px auto;
+
 }
 
 .backgroundcolorpoint:before {
@@ -521,8 +522,9 @@ body {
   font-family: "Noto Sans KR";
 }
 
-.logmainbox{
+.logmainbox {
   display: flex;
+  padding: 60px 106px;
 }
 
 /*로그인상자 왼쪽*/
@@ -533,7 +535,7 @@ body {
   font-weight: bold;
   color: #192668;
   margin-bottom: 5px;
-  gap: 1px;
+  margin-top: 70px;
 
 }
 
@@ -550,10 +552,11 @@ body {
 
 .joinbtn {
   border: 1px solid #192668;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 230px;
   height: 60px;
   font-size: 18px;
+  font-weight: bold;
   color: #192668;
   background-color: white;
   margin-bottom: 90px;
@@ -571,24 +574,91 @@ body {
 .logmainbox_leftbottom {
   text-decoration: underline;
   font-size: 16px;
+  text-align: start
 }
 
 .logmain_left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 
 /*바*/
 .logmin_bar {
-  background-color:  #dadbe0;
+  background-color: #dadbe0;
   width: 1px;
 
   margin: 50px 0px;
 }
 
 
-/*로그인상자 왼쪽*/
-.logmain_right{
+/*로그인상자 오른쪽*/
+.logmain_right {
   margin: 0px auto;
+}
+
+.logmain_idorkey {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.idorkey_id:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+  border-bottom: 4px #192668 solid;
+
+}
+
+.idorkey_id {
+  width: 214px;
+  height: 48px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 4px #192668 solid;
+  text-align: center;
+
+
+}
+
+.idorkey_key:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+}
+
+.idorkey_key {
+  width: 214px;
+  height: 48px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px #dadbe0 solid;
+  text-align: center;
+
+
+}
+
+.logmain_id {
+
+  color: #767676;
+  font-size: 14px;
+}
+.logmain_id>span{
+
+}
+.logmain_idbox>input:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+
+
+}
+.logmain_idbox>input{
+  margin-top: 10px;
+  width: 428px;
+  height: 48px;
+  border: none;
+  border-bottom:1px #192668 solid;
+}
+.logmain_list{
+  margin-top: 40px;
 }
