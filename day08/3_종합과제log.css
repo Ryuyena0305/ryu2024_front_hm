@@ -127,7 +127,7 @@ body {
 #headerBox {
   display: none;
   position: absolute;
-  top: 123px;
+  top: 120px;
   left: 0px;
   background-color: white;
   width: 100%;
@@ -144,6 +144,7 @@ body {
 
 #headerMenu li:hover #headerBox {
   display: block;
+  z-index: 100;
 }
 
 #headerLeftbox {
@@ -503,16 +504,49 @@ body {
 
 /*========================================로그인 페이지=========================================================*/
 /*배경*/
+
+
+.backgroundcolor_title{
+  font-size: 32px;
+ 
+  padding-top: 65px;
+  width: 1280px;
+  position: absolute;
+  top:10px;
+  right:380px;
+  left : 170px;
+
+}
+.backgroundcolorpoint{
+  background-color: #0040b6;
+  height: 264px;
+  border-radius: 0px 0px 50px 0px;
+  color: white;
+  font-size: 30px;
+  z-index: 80;
+  background-position: center top;
+
+
+}
 .backgroundcolorset {
   background-color: #f8f9fc;
   height: 1023px;
+  position: relative;
+
 }
 
 .logmainbox {
   background-color: white;
+  box-shadow: black;
   width: 1280px;
   height: 730px;
   margin: 0px auto;
+  border-radius: 20px;
+  position: absolute;
+  top:135px;
+  right:380px;
+  left : 170px;
+
 
 }
 
@@ -529,7 +563,7 @@ body {
 
 /*로그인상자 왼쪽*/
 .loginmaintitle {
-  width: 427px;
+  width: 428px;
   height: 180px;
   font-size: 40px;
   font-weight: bold;
@@ -546,7 +580,7 @@ body {
 
 .joinbtn:hover {
   border: 1px solid #0c5aeb;
-  border-radius: 5px;
+  border-radius: 10px;
 
 }
 
@@ -589,18 +623,24 @@ body {
   background-color: #dadbe0;
   width: 1px;
 
+
   margin: 50px 0px;
+  margin-left: 90px;
 }
 
 
 /*로그인상자 오른쪽*/
 .logmain_right {
   margin: 0px auto;
+  margin-left: 80px;
+  width: 427px;
+  height: 609px;
 }
 
 .logmain_idorkey {
   display: flex;
   flex-wrap: nowrap;
+
 
 }
 
@@ -618,6 +658,7 @@ body {
   color: black;
   border-bottom: 4px #192668 solid;
   text-align: center;
+  padding-top: 5px;
 
 
 }
@@ -634,6 +675,7 @@ body {
   color: black;
   border-bottom: 1px #dadbe0 solid;
   text-align: center;
+  padding-top: 5px;
 
 
 }
@@ -642,23 +684,129 @@ body {
 
   color: #767676;
   font-size: 14px;
-}
-.logmain_id>span{
+  margin-top: 30px;
 
 }
+
+.logmain_id>span {
+}
+
 .logmain_idbox>input:hover {
   border: 1px solid #0c5aeb;
   border-radius: 5px;
 
 
 }
-.logmain_idbox>input{
+
+.logmain_idbox>input {
   margin-top: 10px;
   width: 428px;
   height: 48px;
   border: none;
-  border-bottom:1px #192668 solid;
+  border-bottom: 1px #192668 solid;
 }
-.logmain_list{
+
+.logmain_list {
   margin-top: 40px;
+}
+
+.idcheckbox>input:hover {
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+
+
+}
+
+.idcheckbox{
+  zoom: 1.5;
+  background-color: #00256C;
+
+}
+
+.logmain_idsto {
+  margin-top: 20px;
+ 
+}
+
+.logmain_login_btn>a>input:hover {
+  border: 3px solid #0c5aeb;
+
+  border-radius: 10px;
+}
+
+.logmain_login_btn>a>input {
+  color: #ffffff;
+  background-color: #00256C;
+  width: 428px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 10px;
+} 
+.logmain_searchlist:hover{
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;}
+
+
+.logmain_search {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin:32px 60px 40px;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.logmain_searchbar {
+  content: "";
+  background-color: #d9dbe1;
+  width: 1px;
+  height: 20px;
+  margin: 0px;
+  margin-top: 3px;
+
+
+}
+
+/*oauth 로그인*/
+.logmain_oauthlog {
+  color: #555555;
+  text-align: center;
+}
+
+.oaulist {
+  display: flex;
+  justify-content: space-evenly;
+  color: #555555;
+  margin-top: 10px;
+}
+
+.oauname{
+  display: flex;
+  justify-content: center;
+
+}
+.oauitem>a:hover{
+
+  border: 1px solid #0c5aeb;
+  border-radius: 5px;
+  width: 63px;
+  height: 77px;
+  margin-left: 12px;
+
+
+}
+.oauitem{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+width: 64px;
+
+}
+.oauitem_hover{
+  border: 1px white solid;
+
 }
