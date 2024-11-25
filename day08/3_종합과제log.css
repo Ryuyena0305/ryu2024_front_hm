@@ -518,7 +518,7 @@ body {
 
 
 }
-.backgroundcolorset {
+.backgroundcolorset { /*부모클래스*/
   background-color: #f8f9fc;
   height: 1023px;
   position: relative;
@@ -526,7 +526,7 @@ body {
 
 }
 
-.backgroundcolor_title{
+.backgroundcolor_title{/*자식클래스*/
   font-size: 32px;
   color: white;
   padding-top: 65px;
