@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    font-family: Noto Sans KR;
+    margin: 0px;
+    padding: 0px;
+    font-size:16px;
+}
+
+#main1{
+    width: 1200px; 
+    margin: 0px auto;
+}
+
+/*main top (reservation)*/
+#main_top1>h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    margin-bottom: 5px;
+    color:#333333;
+}
+#main_top2{
+    border:2px #81674e solid;
+    border-radius: 5px;
+    height: 0px;
+    width: 50px;
+    margin: 0px auto;
+}
+
+/*main_box left right*/
+
+
+#main_box{
+    display: flex;
+    margin-top: 100px;
+  
+}
+#main_box_left{
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    width: 770px;
+    margin-right: 30px;
+
+}
+#main_box_right{
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+
+   
+}
+
+
+.box_number{
+   
+}
+.box_number_btn{
+    display: flex;
+}
+#box_number_choice{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+
+
+/*time notice*/
+#time_notice{
+    background-color: #f8f9fb;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 92px;
+    margin: 0px auto;
+}
+.time_notice_con, .time_notice_symbol{
+   color: #a2a4b2;
+   margin: 30px;
+}
+.time_notice_con>span{
+    color : #666666;
+    font-size : 18px;
+    margin: 10px;
+}
+/*resevation_btn*/
+#resev_btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+#resevation_btn{
+    width: 250px;
+    height: 50px;
+    background-color: #81674e;
+    color:white;
+    border: none;
+    border-radius: 10px;
+}
