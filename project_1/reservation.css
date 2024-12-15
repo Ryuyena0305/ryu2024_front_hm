@@ -120,8 +120,8 @@ margin-bottom: 8px;
     border-radius: 6px;
     color: #666;
     font-size: 13px;
-    -webkit-appearance: none;
-    height: 25px;
+    
+    height: 22px;
     margin-bottom: 20px;
 }
 #box_number_choice{
