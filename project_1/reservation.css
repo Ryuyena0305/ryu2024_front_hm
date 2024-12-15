@@ -37,6 +37,8 @@
   
 }
 #main_box_left{
+    display: flex;
+    justify-content: center;
     border: 1px solid #dcdcdc;
     border-radius: 5px;
     width: 770px;
@@ -65,6 +67,99 @@
     
 }
 
+/*캘린더*/
+
+.main_box_left1{
+   
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    width: 700px;
+    height: 458px;
+    
+}
+.main_box_left1>h6{
+    margin: 30px 10px;
+    font-size: 25px;
+}
+
+.btn{
+    border: none;
+    color: #bdbdbd;
+    background-color: white;
+    font-size: 30px;
+}
+/*달력 날짜 표시 구역*/
+
+.main_box_left1>div{
+    width: 14%;/*부모요소의 가로사이즈 100%의 7등분*/
+    height: 60px;
+    border: 1px solid #eeeeee;
+}
+.main_box_left1 >.week{
+    height: 25px;
+    text-align: center;
+    background-color: rgb(255, 232, 236);;
+}
+
+/*main_box_right*/
+.date_text{
+font-size: 13px;
+color: #666b7b;
+margin-bottom: 8px;
+}
+.input_date{
+    border: 1px solid #e0e0e0;
+    background: #F7F9FB;
+    width: 274px;
+    padding: 14px 20px 14px 45px;
+    border-radius: 6px;
+    color: #666;
+    font-size: 13px;
+    -webkit-appearance: none;
+    height: 25px;
+    margin-bottom: 20px;
+}
+#box_number_choice{
+    width: 340px;
+    height: 45px;
+    margin-bottom: 50px;
+   
+}
+.box_number_btn{
+    width: 77px;
+    display: flex;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    color:#333333;
+  
+
+}
+.box_number{
+    height: 70px;
+}
+.number_con{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+.qunti_btn{
+    background: #F7F9FB;
+    border: 1px solid #e0e0e0;
+    width: 30px;
+    text-align: center;
+    color: #333;
+    font-size: 10px;
+    line-height: 42px;
+    font-size:15px;
+    font-weight:500;
+}
 
 
 
@@ -73,6 +168,7 @@
 
 /*time notice*/
 #time_notice{
+    
     background-color: #f8f9fb;
     border: 1px solid #dcdcdc;
     border-radius: 5px;
@@ -82,6 +178,7 @@
     width: 1200px;
     height: 92px;
     margin: 0px auto;
+    margin-top: 50px;
 }
 .time_notice_con, .time_notice_symbol{
    color: #a2a4b2;

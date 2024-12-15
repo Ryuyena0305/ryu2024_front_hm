@@ -24,53 +24,63 @@
             </div>
             <div id = "main_box">
                 <div id = "main_box_left">
-                    달력
+                    <div class="main_box_left1">
+                        <button class="btn" onclick="monthChange(-1)"><</button>
+                        <h6>2024.12</h6>
+                       
+                    </div>
+                    <div class = "main_box_left1">
+                        <h6>2025.01</h6>
+                        <button class="btn" onclick="monthChange(1)">></button>
+            
+                    </div>
+            
 
                 </div>
                 <div id = "main_box_right">
                     <div id = "box_checkin_date">
-                        <div>
+                        <div class="date_text">
                             체크인
                         </div>
-                        <input type="date">
+                        <input type="text" name="val"  class="input_date" readonly/>
 
                     </div>
                     <div id = "box_checkout_date">
-                        <div>
+                        <div class="date_text">
                             체크아웃
                         </div>
-                        <input type="date">
+                        <input type="text" name="val"  class="input_date" readonly/>
 
                     </div>
                     <div id = "box_number_choice">
                         <div class = "box_number">
-                            <div>객실수</div>
+                            <div class="date_text">객실수</div>
                             <div class="box_number_btn">
-                                <button>-</button>
-                                <div>1</div>
-                                <button>+</button>
+                                <button class="qunti_btn">-</button>
+                                <div class="number_con">1</div>
+                                <button class="qunti_btn">+</button>
                             </div>
                         </div>
                         <div  class = "box_number">
-                            <div>성인</div>
+                            <div class="date_text">성인</div>
                             <div class="box_number_btn"> 
-                                <button>-</button>
-                                <div>1</div>
-                                <button>+</button>
+                                <button class="qunti_btn">-</button>
+                                <div class="number_con">1</div>
+                                <button class="qunti_btn">+</button>
                             </div>
                         </div>
                         <div  class = "box_number">
-                            <div>아동</div>
+                            <div class="date_text">아동</div>
                             <div class="box_number_btn">
-                                <button>-</button>
-                                <div>1</div>
-                                <button>+</button>
+                                <button class="qunti_btn">-</button>
+                                <div class="number_con">1</div>
+                                <button class="qunti_btn">+</button>
                             </div>
                         </div>
 
                     </div>
                     <div>
-                        <input type="text" placeholder="프로모션코드">
+                        <input type="text" class="input_date" placeholder="프로모션코드">
                     </div>
 
                 </div>
